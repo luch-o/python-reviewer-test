@@ -17,12 +17,11 @@ def main():
 
 
 def perform_division(a,b):
-    global operations_count
     try:
         operations_count += 1
         return int(a)/int(b)
     except Exception as e:
-        pass
+        print(e.__class__.__name__, e)
 
 
 main()
